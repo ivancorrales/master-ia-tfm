@@ -1,0 +1,1329 @@
+{
+    "version": "v2.0",
+    "data": [
+        {
+            "title": "Conceptos comunes de búsqueda",
+            "paragraphs": [
+                {
+                    "context": "Los algoritmos de búsqueda exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial. Los nodos al final de las ramas son los nodos hoja, que se corresponden con la lista abierta de estados no expandidos de un algoritmo. Los nodos interiores se corresponden con la lista cerrada de estados ya expandidos. La forma en la que el árbol se genera eligiendo expandir unos estados u otros determina el comportamiento de algoritmo de búsqueda. Hay que tener en cuenta que, aunque el espacio de búsqueda se represente como un árbol, pueden existir múltiples caminos desde el estado inicial a un estado cualquiera. De esta manera, puede darse el caso de que el mismo estado aparezca en dos nodos del árbol diferentes. Para evitar desperdiciar trabajo y memoria es pues conveniente realizar detección de duplicados. La detección de duplicados se suele implementar ayudándose de una tabla hash. Así pues, si se detecta que un estado ya existe existen dos posibilidades: si el nuevo camino es de mayor o igual coste, el estado se descarta; si el nuevo camino es de menor coste, se actualiza el coste, la acción que lo genera y el puntero al estado padre, es decir, se mueve de una rama del árbol a otra. En este último caso puede ser necesario reexpandir el estado, es decir, regenerar sus sucesores y todo el subárbol del cual es raíz, aunque esto depende del algoritmo en cuestión. Los algoritmos de búsqueda tienen cuatro características fundamentales",
+                    "qas": [
+                        {
+                            "id": "5ad9df5b-b3ef-4db7-99fa-e30f151ab24a",
+                            "question": "¿Cómo exploran los algoritmos de búsqueda el espacio de estados?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los algoritmos de búsqueda exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial",
+                                    "answer_start": 27
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f4c9dcfb-f13b-4793-bff7-9edc0f53c7d3",
+                            "question": "¿Tienen buen rendimiento los arboles en profundidad?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "4765c5ed-4eb6-40e2-94dd-380fdf318ac2",
+                            "question": "¿Con qué se corresponden los nodos interiores de un algoritmo de búsqueda?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los nodos interiores se corresponden con la lista cerrada de estados ya expandidos",
+                                    "answer_start": 256
+                                },
+                                {
+                                    "text": "se corresponden con la lista cerrada de estados ya expandidos",
+                                    "answer_start": 277
+                                },
+                                {
+                                    "text": "con la lista cerrada de estados ya expandidos",
+                                    "answer_start": 293
+                                }
+                            ]
+                        },
+                        {
+                            "id": "117b81a3-236c-45cf-aab3-2793cf11b73a",
+                            "question": "¿Con que se corresponden los nodos exteriores de un algoritmo de búsqueda?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "dcbd86b9-2b22-44b5-989c-6ffb05233171",
+                            "question": "¿Cuantos caminos hay desde un estado inicial a otro estado?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "pueden existir múltiples caminos desde el estado inicial a un estado cualquiera",
+                                    "answer_start": 560
+                                },
+                                {
+                                    "text": "pueden existir múltiples caminos",
+                                    "answer_start": 560
+                                },
+                                {
+                                    "text": "múltiples caminos",
+                                    "answer_start": 575
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d0e9c3cd-a56f-432d-83b1-4c72b1b056fd",
+                            "question": "¿Cuantos caminos llevan a Roma?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "3d8b9312-8c0c-4ec3-8cdb-4ab5feba9700",
+                            "question": "¿Cuantas características fundamentales tiene un algoritmo de búsqueda?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los algoritmos de búsqueda tienen cuatro características fundamentales",
+                                    "answer_start": 1407
+                                },
+                                {
+                                    "text": "tienen cuatro características fundamentales",
+                                    "answer_start": 1434
+                                },
+                                {
+                                    "text": "cuatro características fundamentales",
+                                    "answer_start": 1441
+                                },
+                                {
+                                    "text": "cuatro",
+                                    "answer_start": 1441
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7b467dc8-837c-4a80-b0de-2f7299bf25ef",
+                            "question": "¿Cuales son las leyes fundamentales de una planta?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "Los algoritmos de búsqueda exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial. Los nodos al final de las ramas son los nodos hoja, que se corresponden con la lista abierta de estados no expandidos de un algoritmo. Los nodos interiores se corresponden con la lista cerrada de estados ya expandidos. La forma en la que el árbol se genera eligiendo expandir unos estados u otros determina el comportamiento de algoritmo de búsqueda.",
+                    "qas": [
+                        {
+                            "id": "4daf2141-ddcf-4b47-83bb-547d46c41e4a",
+                            "question": "¿Qué exploran los algoritmos de búsqueda?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los algoritmos de búsqueda exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial",
+                                    "answer_start": 36
+                                },
+                                {
+                                    "text": "el espacio de estados",
+                                    "answer_start": 36
+                                },
+                                {
+                                    "text": "Los algoritmos de búsqueda exploran el espacio de estados",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "exploran el espacio de estados generando un árbol de búsqueda cuya raíz es el estado inicial",
+                                    "answer_start": 27
+                                }
+                            ]
+                        },
+                        {
+                            "id": "39a89409-cd42-4203-9d6b-31bfc6db5ba0",
+                            "question": "¿Para que se utilizan los criterios de búsqueda?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "de694b9a-615e-42b4-ad87-bbdf7dda90dd",
+                            "question": "¿Cuales son los nodos hojas?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los nodos al final de las ramas son los nodos hoja",
+                                    "answer_start": 121
+                                },
+                                {
+                                    "text": "Los nodos al final de las ramas",
+                                    "answer_start": 121
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6aba7dbb-0384-4734-818e-2e9950e47ff8",
+                            "question": "¿En que parte del árbol se encuentran los frutos?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "3e005c3f-bfcb-40aa-9c47-0dc904c7215b",
+                            "question": "¿Qué influye en el modo en el que actúa un algoritmo de búsqueda?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La forma en la que el árbol se genera",
+                                    "answer_start": 340
+                                },
+                                {
+                                    "text": "La forma en la que el árbol se genera eligiendo expandir unos estados u otros",
+                                    "answer_start": 340
+                                }
+                            ]
+                        },
+                        {
+                            "id": "32f741e4-69d7-4cd9-b5c4-e95a23aa95cd",
+                            "question": "¿De que depende el comportamiento de las personas?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "La detección de duplicados se suele implementar ayudándose de una tabla hash. Así pues, si se detecta que un estado ya existe existen dos posibilidades: si el nuevo camino es de mayor o igual coste, el estado se descarta; si el nuevo camino es de menor coste, se actualiza el coste, la acción que lo genera y el puntero al estado padre, es decir, se mueve de una rama del árbol a otra. En este último caso puede ser necesario reexpandir el estado, es decir, regenerar sus sucesores y todo el subárbol del cual es raíz, aunque esto depende del algoritmo en cuestión.",
+                    "qas": [
+                        {
+                            "id": "bddfc6a8-1ea7-4726-ae7d-faf5a404a821",
+                            "question": "¿Qué mecanismo se utiliza para implementar una solución a la detecnción de duplicados?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "una tabla hash",
+                                    "answer_start": 62
+                                }
+                            ]
+                        },
+                        {
+                            "id": "924f5fd6-d03c-4eae-9515-0b81e1c4da3d",
+                            "question": "¿Que tipo de tabla se utiliza para clacular números aleatorios?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "66af826d-17ce-4b38-9de1-c90c73bc67bb",
+                            "question": "¿Qué se hace con un estado que ya existe y el nuevo camino es de mayor o igual coste?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "el estado se descarta",
+                                    "answer_start": 199
+                                },
+                                {
+                                    "text": "se descarta",
+                                    "answer_start": 209
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e8bf3f1f-03f6-4024-9d23-e567f166dc1d",
+                            "question": "¿Se descarta un estado nuevo?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Planitificación automática y PDDL",
+            "paragraphs": [
+                {
+                    "context": "El caso más sencillo es el que se conoce como planificación clásica, en la que se tiene conocimiento completo. El conocimiento del mundo se describe en lógica proposicional, las acciones no tienen duración y son deterministas y la métrica (si se emplea) es minimizar la longitud del plan. La planificación clásica es la forma más sencilla de planificación y el modelo formal a partir del cual se fue ofreciendo progresivamente mayor generalidad y expresividad. Por ello, en este tema trataremos únicamente planificación clásica.",
+                    "qas": [
+                        {
+                            "id": "e8a7e11b-23e0-4a0c-b4bf-32fac0b2b438",
+                            "question": "¿Cómo se describe el conocimiento del mundo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "El conocimiento del mundo se describe en lógica proposicional",
+                                    "answer_start": 111
+                                },
+                                {
+                                    "text": "se describe en lógica proposicional",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "en lógica proposicional",
+                                    "answer_start": 149
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1c42f3e3-bcb6-461d-99be-8bfabc37839f",
+                            "question": "¿Cual es el origen del mundo?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "7d72766a-f3e2-4870-96e7-8c5f108f2da4",
+                            "question": "¿Cuál es la forma  más sencilla de planificación?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La planificación clásica",
+                                    "answer_start": 289
+                                }
+                            ]
+                        },
+                        {
+                            "id": "49a7ff38-b675-4f57-81f6-957d249aaaaf",
+                            "question": "¿Qué es la planificación moderna?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "El origen de la planificación clásica se remonta a los años 60 con el General Problem Solver, un programa cuyo objetivo era ser capaz de resolver cualquier tipo de problema sin importar a que dominio perteneciera. La motivación era crear un programa que fuera capaz de resolver tareas muy diferentes entre sí, de la misma manera que lo hacen los humanos. Aunque enseguida se comprobó que esta tarea era demasiado ambiciosa, el concepto de resolutor general permaneció en IA dentro del área de la IA general. La planificación automática, en realidad, podría considerarse como la sucesora espiritual del General Problem Solver, ya que es independiente de dominio. Esto quiere decir que los planificadores han de ser capaces de resolver problemas de planificación diferentes sin intervención del usuario, que solo se limita a modelar el problema.",
+                    "qas": [
+                        {
+                            "id": "3847d66b-0725-49bc-9459-168be559189a",
+                            "question": "¿Cual es el origen de la planificación clásica?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "el General Problem Solver",
+                                    "answer_start": 67
+                                }
+                            ]
+                        },
+                        {
+                            "id": "72b53268-9bb9-4186-a81f-b1a6b49b18f2",
+                            "question": "¿Cuando se crea la física cuántica?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "2abf85d9-52db-40ea-859b-2955e0d6c6ba",
+                            "question": "¿Cual era la misisón del General Problem Solver?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "ser capaz de resolver cualquier tipo de problema",
+                                    "answer_start": 124
+                                },
+                                {
+                                    "text": "resolver cualquier tipo de problema",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "ser capaz de resolver cualquier tipo de problema sin importar a que dominio perteneciera",
+                                    "answer_start": 124
+                                },
+                                {
+                                    "text": "resolver cualquier tipo de problema sin importar a que dominio perteneciera",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "crear un programa que fuera capaz de resolver tareas muy diferentes entre sí, de la misma manera que lo hacen los humanos",
+                                    "answer_start": 232
+                                }
+                            ]
+                        },
+                        {
+                            "id": "858c8b2a-5455-486d-97d6-05c2e0dedec9",
+                            "question": "¿Quién fue el autor del General Problem Solver?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "c1663090-225a-4a2d-91d1-2c0e6c41fe18",
+                            "question": "¿Quién es la sucesora espiritual del General Problem Solver",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La planificación automática",
+                                    "answer_start": 508
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ae085c00-bd2b-488a-a59e-153b89b4a090",
+                            "question": "¿Qué es un espíritu?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "cb8a0327-2449-44b5-ad69-00588900bc70",
+                            "question": "¿De qué deben ser capaces los planificadores?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "los planificadores han de ser capaces de resolver problemas de planificación diferentes sin intervención del usuario",
+                                    "answer_start": 684
+                                },
+                                {
+                                    "text": "de resolver problemas de planificación diferentes sin intervención del usuario",
+                                    "answer_start": 722
+                                }
+                            ]
+                        },
+                        {
+                            "id": "bce45db7-f26e-4d93-8bc6-9bef7efb2d51",
+                            "question": "¿Cuales son los tipos de planificadores?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Simulación Monte Carlo",
+            "paragraphs": [
+                {
+                    "context": "Minimax recorre el árbol de búsqueda de forma exhaustiva hasta cierta profundidad, como corresponde a una búsqueda en anchura. Sin embargo, esto impone una severa restricción en la profundidad del mismo. Para poder extender el árbol de búsqueda más allá sin tener que recorrer las ramas que no sean relevantes, existe una alternativa: explorar el árbol de búsqueda de forma probabilística. La forma de explorar un árbol de búsqueda probabilísticamente es mediante el método de Monte Carlo. Consiste en recrear múltiples simulaciones de partidas de forma total o parcial desde el punto de decisión, y, a partir de lo observado, elegir la rama más prometedora.",
+                    "qas": [
+                        {
+                            "id": "79fb976e-5089-4905-982a-5bf50d215878",
+                            "question": "¿Cómo recorre Minimax un árbol de búsqueda?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Minimax recorre el árbol de búsqueda de forma exhaustiva hasta cierta profundidad, como corresponde a una búsqueda en anchura",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "Minimax recorre el árbol de búsqueda de forma exhaustiva hasta cierta profundidad",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "de forma exhaustiva hasta cierta profundidad, como corresponde a una búsqueda en anchura",
+                                    "answer_start": 37
+                                },
+                                {
+                                    "text": "de forma exhaustiva hasta cierta profundidad",
+                                    "answer_start": 37
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5597af69-60ce-4851-8ca0-90aab49514e6",
+                            "question": "¿En qué consiste la poda alfa beta?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "2cfedad1-4fd6-4cf8-95d5-3e586da7e5bf",
+                            "question": "¿Cómo se puede extender el árbol de búsqueda  sin tener que recorrer las ramas que no sean relevantes?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "explorar el árbol de búsqueda de forma probabilística",
+                                    "answer_start": 335
+                                }
+                            ]
+                        },
+                        {
+                            "id": "70378efe-d4a6-4cc2-81e2-6e94550ce63c",
+                            "question": "¿Qué otra alternativa al uso de la poda existe en el algoritmo minimax?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "0bbfa8d2-f6bd-4639-a36b-e6d7eb5d0a3a",
+                            "question": "¿Qué método se utiliza para explorar un árbol de búsqueda probabilísticamente",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "el método de Monte Carlo",
+                                    "answer_start": 464
+                                },
+                                {
+                                    "text": "Monte Carlo",
+                                    "answer_start": 477
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a24633f7-1dd7-4237-994b-6b7ed77e31f3",
+                            "question": "¿Dónde se encuentra el Mone Carlo?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "3592c4c5-6c53-40ae-bf06-a436a805a8f7",
+                            "question": "¿Qué rama se elige en el método de Monte Carlo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "la rama más prometedora",
+                                    "answer_start": 634
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0485093c-0cfd-446b-b499-ef04681380f1",
+                            "question": "¿A partir de que nodo se obtiene el recorrido óptimo?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "Elegir Minimax o MCTS depende de varios factores. Minimax es más robusto cuando hay movimientos que nos pueden costar la partida, ya que evita que caigamos en trampas que estén a baja profundidad gracias a su exploración exhaustiva.",
+                    "qas": [
+                        {
+                            "id": "1b5dbe17-5785-4b08-aa0a-62d21636720a",
+                            "question": "¿Por qué  Minimax es más robusto cuando hay movimientos que nos pueden costar la partida?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "evita que caigamos en trampas que estén a baja profundidad",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "evita que caigamos en trampas que estén a baja profundidad gracias a su exploración exhaustiva",
+                                    "answer_start": 137
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4ed13461-c9e5-425f-b46d-429eba79f9cf",
+                            "question": "¿Por que el algoritmo maxmini es menos robusto?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "8230f0b4-77b0-43e3-b6b0-1a6bf9f0881e",
+                            "question": "¿De cuantos factores depende la elección entre MCTS o Minimax?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "depende de varios factores",
+                                    "answer_start": 22
+                                },
+                                {
+                                    "text": "de varios factores",
+                                    "answer_start": 30
+                                },
+                                {
+                                    "text": "de varios",
+                                    "answer_start": 30
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ec7b9a5b-89fe-4105-874d-60bba49d983b",
+                            "question": "¿Cual es el factor determinante para elegir Minimax sobre MCTS?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "El método de Monte Carlo no solo se aplica en juegos. Ya que identifica estadísticamente distribuciones sin necesidad de conocer el modelo de un fenómeno, es apto para aquellos problemas que por su complejidad están fuera del alcance de otras técnicas analíticas, por la falta de determinismo o por su tamaño. Ejemplos de aplicación son la optimización numérica, la simulación de procesos físicos, el análisis estadístico de las tendencias del mercado, etc. El método de Monte Carlo suele constar de cuatro pasos fundamentales",
+                    "qas": [
+                        {
+                            "id": "8d0edc6e-1e49-4fe2-a50b-b83c85995701",
+                            "question": "¿Se aplica únicamente en juegos el el método Monte Carlo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "no",
+                                    "answer_start": 25
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6ca8e813-ae6d-4ba5-b759-21d290486584",
+                            "question": "¿Por que se utiliza el método Monte Carlo para la desacarga de videojuegos?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "53312124-66bb-4751-8837-8286959dc709",
+                            "question": "¿De cuantos pasos suele constar el método Monte Carlo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "El método de Monte Carlo suele constar de cuatro pasos fundamentales",
+                                    "answer_start": 458
+                                },
+                                {
+                                    "text": "de cuatro pasos fundamentales",
+                                    "answer_start": 497
+                                },
+                                {
+                                    "text": "de cuatro",
+                                    "answer_start": 497
+                                }
+                            ]
+                        },
+                        {
+                            "id": "79ad27d8-cf50-4187-94ed-48e899df7db4",
+                            "question": "¿Cuales son los principios del método Monte Carlo?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Teoría de juegos",
+            "paragraphs": [
+                {
+                    "context": "La teoría de juegos es un amplio campo de estudio relacionado con la toma de decisiones en entornos en los que hay múltiples jugadores. En particular, es el estudio de los métodos matemáticos de conflicto y cooperación entre agentes racionales deliberativos. La teoría de juegos surgió del estudio de equilibrios de Nash en juegos de suma cero y, más tarde, se generalizó a un amplio espectro de áreas, incluyendo economía, ciencias políticas, biología, psicología, sociología, etc. y, por supuesto, las ciencias de la computación. Los juegos estudiados por la teoría de juegos se definen matemáticamente en función del número de jugadores, la información de la que disponen, las acciones que cada jugador puede realizar y la recompensa obtenida. Estas condiciones bastan para determinar si, para la estrategia óptima, existe un equilibrio, es decir, una situación en la que ningún jugador se desviará de su estrategia so pena de sufrir una pérdida en su puntuación.",
+                    "qas": [
+                        {
+                            "id": "86074152-1850-4a31-9dd2-a5ea235f12d7",
+                            "question": "¿Cuántos jugadores hay en un problema resuelto por la teoría de juegos?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "hay múltiples",
+                                    "answer_start": 111
+                                },
+                                {
+                                    "text": "hay múltiples jugadores",
+                                    "answer_start": 111
+                                },
+                                {
+                                    "text": "múltiples jugadores",
+                                    "answer_start": 115
+                                },
+                                {
+                                    "text": "múltiples",
+                                    "answer_start": 115
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f9bf5435-8411-427c-b7b4-8bf4dd0267fd",
+                            "question": "¿Se utiliza tablero para los juegos de la teoría?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "d2954307-8c1e-4741-bfac-5588800967c5",
+                            "question": "¿Qué es la teoría de juegos?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "es el estudio de los métodos matemáticos de conflicto y cooperación entre agentes racionales deliberativos",
+                                    "answer_start": 151
+                                },
+                                {
+                                    "text": "el estudio de los métodos matemáticos de conflicto y cooperación entre agentes racionales deliberativos",
+                                    "answer_start": 154
+                                }
+                            ]
+                        },
+                        {
+                            "id": "695e459a-78dd-42d7-8995-a36684151975",
+                            "question": "¿Quién inventó la teoría de juegos?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "5398c011-afab-4262-ad5c-40ea1af6bd87",
+                            "question": "¿En función de que se definen los juegos estudiados por la teoría de juegos?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "en función del número de jugadores, la información de la que disponen, las acciones que cada jugador puede realizar y la recompensa obtenida",
+                                    "answer_start": 605
+                                },
+                                {
+                                    "text": "del número de jugadores, la información de la que disponen, las acciones que cada jugador puede realizar y la recompensa obtenida. ",
+                                    "answer_start": 616
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0882eb0f-dd3f-4c50-848c-5a4e1e95876e",
+                            "question": "¿Cada cuánto se actualizan las reglas de un juego?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "Secuencial/simultáneo: También llamado asíncrono/síncrono, determina si los jugadores juegan en turnos alternos o todos a la vez. Un juego de mesa tradicional es secuencial, mientras que un videojuego de disparos es simultáneo. Suma constante: Un juego de suma constante es aquel en el que la recompensa que recibe un jugador se resta de la del otro, es decir, cada vez que un jugador gana algo, los adversarios pierden la parte proporcional. Por ejemplo, en el póker el dinero que un jugador gana en una jugada ha sido necesariamente obtenido de las reservas iniciales de los demás jugadores, sin que la cantidad de dinero en la mesa varíe. Cuando la constante es 0, al juego se le conoce como juego de suma cero o nula. Por otro lado, en los juegos que no son de suma constante, la recompensa total tiende a aumentar cuando existe buena negociación entre los jugadores.",
+                    "qas": [
+                        {
+                            "id": "70a14959-4cc9-4fb0-92c0-44878eea28ac",
+                            "question": "¿Con que otro nombre se conoce a un juego de tipo simultáneo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "asincrono",
+                                    "answer_start": -1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6d5bb153-e766-4bd2-824d-71ef81c04cdd",
+                            "question": "¿En que año se crearon los juegos de mesa?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "2958b4f4-83d4-485e-a4f0-a07d0bec76c7",
+                            "question": "¿Cómo juegan los jugadores en un juego secuencial?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "los jugadores juegan en turnos alternos",
+                                    "answer_start": 72
+                                },
+                                {
+                                    "text": "juegan en turnos alternos",
+                                    "answer_start": 86
+                                },
+                                {
+                                    "text": "en turnos alternos",
+                                    "answer_start": 93
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7a1c0b55-3225-4c39-8430-9ce66f854e5c",
+                            "question": "¿Con qué otro nombre se conoce a los juegos del hambre?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "b3ed7830-9799-463f-8cb0-4cdcdaf7e7d0",
+                            "question": "¿Cómo afecta a los adversarios en un juego de suma constante cuando un jugador gana algo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "los adversarios pierden la parte proporcional",
+                                    "answer_start": 396
+                                },
+                                {
+                                    "text": "pierden la parte proporcional",
+                                    "answer_start": 412
+                                }
+                            ]
+                        },
+                        {
+                            "id": "45f77e3a-52c2-466e-84be-15e108e31a03",
+                            "question": "¿Cual sería un ejemplo de juego en offline?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "5ca1d53c-0aca-44aa-8035-00b3d8259b2b",
+                            "question": "¿Cual sería un ejemplo de juego secuencial?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Un juego de mesa tradicional",
+                                    "answer_start": 130
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7603b558-fa0a-4815-a741-0878093a7142",
+                            "question": "¿Cual sería un ejemplo de juego en remoto?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "30eb0e03-a3b1-40d6-8e13-cd21c4bdb998",
+                            "question": "¿Cual sería un ejemplo de juego simultáneo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "un videojuego de disparos",
+                                    "answer_start": 187
+                                }
+                            ]
+                        },
+                        {
+                            "id": "409ad21d-6153-4cc9-9a11-ffce32d4eef1",
+                            "question": "¿Qué tipo de juego es el del calamar?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "195292c0-f381-4403-8bc2-05f1b42c651c",
+                            "question": "¿Con que nombre se conoce a un juego dónde la constante es 0?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "juego de suma cero o nula",
+                                    "answer_start": 695
+                                },
+                                {
+                                    "text": "juego de suma cero",
+                                    "answer_start": 695
+                                }
+                            ]
+                        },
+                        {
+                            "id": "62041db1-14c8-41b1-a24d-d2d646256518",
+                            "question": "¿En que consiste un juego donde hay 20 jugadores?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Hitos de la Inteligencia Artificial",
+            "paragraphs": [
+                {
+                    "context": "o 1936: Turing propone la máquina universal y demuestra que el problema de la parada es indecidible. o 1943: primera definición formal de una neurona artificial por parte de Warren McCulloch y Walter Pitts. o 1950: Turing propone su famoso test, que concluye que una IA es apta si un interlocutor humano no es capaz de diferenciar si está conversando con una persona o con una máquina. Claude Shannon describe el ajedrez como un problema de búsqueda heurística. o 1952: Arthur Samuel desarrolla el primer programa competitivo con humanos jugando a las damas. o 1957: el Resolutor General de Problemas, comúnmente conocido como GPS (de las siglas de la definición en inglés General Problem Solver) es creado por Allen Newell y Herbert Simon. Dicho programa era capaz de probar teoremas matemáticos y resolver ciertos problemas de restricciones mediante inferencia lógica. o 1963: se proponen las redes semánticas como modelo de representación de conocimiento experto. Solo 4 años más tarde se desarrolla Dendral, un sistema basado en reglas semánticas exitoso en la investigación sobre compuestos orgánicos. o 1968: se propone el algoritmo de búsqueda A*, que actualmente continúa siendo el algoritmo óptimo de búsqueda más utilizado. o 1969: se construye el robot Shakey como plataforma que integra problemas de la robótica tales como locomoción, percepción del entorno y resolución autónoma de problemas. o 1986: se propone el algoritmo de retropropagación para redes de neuronas artificiales, lo que aumenta enormemente su ámbito de aplicación. o 1988: Judea Perl presenta las redes de creencia, que representan probabilidades y permiten afrontar problemas en los que hay incertidumbre sobre los datos. o 1997: Deep Blue, desarrollado por IBM, consigue derrotar al entonces campeón del mundo de ajedrez Gary Kasparov. o 2005: Múltiples vehículos recorren 131 millas de forma autónoma en el reto de DARPA. o 2007: Jonathan Schaeffer resuelve el problema de las damas, permitiendo crear un programa que siempre encuentra la respuesta óptima y, por lo tanto, es imbatible. o 2011: Watson, un sistema automático que encuentra respuestas a preguntas expresadas en lenguaje natural, gana a humanos expertos en el concurso televisivo Jeopardy! por un margen significativo.",
+                    "qas": [
+                        {
+                            "id": "a2241ac1-db33-4afe-8152-5c16f559cefb",
+                            "question": "¿Cual es el hito más importante del año 1936?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Turing propone la máquina universal y demuestra que el problema de la parada es indecidible",
+                                    "answer_start": 8
+                                },
+                                {
+                                    "text": "Turing propone la máquina universal",
+                                    "answer_start": 8
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6a62a361-1142-418e-ae3d-d5765f2db990",
+                            "question": "¿Qué propuso Thomas Edisson en 1936",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "6c6038d6-2e6f-4dbb-970d-330ec755e645",
+                            "question": "¿En que año propone Alan Turing la máquina universal?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "1936",
+                                    "answer_start": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": "10414849-92f8-4fd6-91db-f2abab5c4191",
+                            "question": "¿En que año se descifra el código enigma? ",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "0f9563a5-7fa5-4cd4-8977-36a385a65d47",
+                            "question": "¿Cuando tiene lugar la primera definición formal de una neurona artificial?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "1943",
+                                    "answer_start": 103
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7e81a0aa-d82c-4bf9-9907-29ea97e6e85d",
+                            "question": "¿Cuando se introduce el uso de Deep Learning?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "d75268bd-a607-44c4-be20-86e45d9436ef",
+                            "question": "¿Quién o quienes son los autores de la primera definición de neurona artificial?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Warren McCulloch y Walter Pitts",
+                                    "answer_start": 174
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ff7abd10-7e66-43da-942a-ec0f9a23e976",
+                            "question": "¿Quien creó el primer satélite artificial?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "854908d8-15e4-47a7-8f11-1d6a9308cfce",
+                            "question": "¿En qué concluye el famoso test de Turing de 1950?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "una IA es apta si un interlocutor humano no es capaz de diferenciar si está conversando con una persona o con una máquina",
+                                    "answer_start": 263
+                                }
+                            ]
+                        },
+                        {
+                            "id": "698b9c88-ee94-498c-9b2a-f41bcdefe7f7",
+                            "question": "¿Que determina el test de Turing de 1912?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "a9dfdc63-c09b-4d26-8c2a-a3c9a8b08c0f",
+                            "question": "¿Quién describe el ajedrez como un problema de búsqueda heurística?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Claude Shannon",
+                                    "answer_start": 386
+                                }
+                            ]
+                        },
+                        {
+                            "id": "eaef70e2-35b3-4946-85d7-c54206b62dfb",
+                            "question": "¿Quienes consideran que el parchis es un problema de búsqueda?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "2545721a-e106-4f7b-a72d-578d4c7bc5e9",
+                            "question": "¿Cuando describe Claude Shannon el ajedrez como un problema de búsqueda heurística?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "1952",
+                                    "answer_start": 464
+                                }
+                            ]
+                        },
+                        {
+                            "id": "713e1fe8-a823-40fc-8d3a-d2ad3b1cfab6",
+                            "question": "¿En que año se considera el dominó un problema de heurística?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "e29e2306-1dee-4def-9738-db33de9a1f2e",
+                            "question": "¿De que son las siglas GPS?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "General Problem Solver",
+                                    "answer_start": 673
+                                },
+                                {
+                                    "text": "Resolutor General de Problemas",
+                                    "answer_start": 570
+                                }
+                            ]
+                        },
+                        {
+                            "id": "43738bcf-a5e3-43a4-9281-3315627bbc62",
+                            "question": "Qué significa PPT?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "5d07a676-b297-4a70-a74c-88ad0e75fd26",
+                            "question": "¿Quienes crearon el Resolutor General de Problemas?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Allen Newell y Herbert Simon",
+                                    "answer_start": 711
+                                }
+                            ]
+                        },
+                        {
+                            "id": "535e53a5-90fd-4624-a190-d6632ca20a1a",
+                            "question": "¿Quienes inventan los problemas bajo demanda?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "764ecb0d-5a54-44b0-9e0e-2a521ba99672",
+                            "question": "¿Cual es el valor proporcionado por el robot Shake?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "integra problemas de la robótica tales como locomoción, percepción del entorno y resolución autónoma de problemas",
+                                    "answer_start": 1291
+                                }
+                            ]
+                        },
+                        {
+                            "id": "61703c28-9f3a-48b7-9005-ee51a77a942c",
+                            "question": "¿Qué pasos tiene el baile Harlem Shake?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "e825283a-bfc3-495d-afff-7f2b506b7c5c",
+                            "question": "¿Qué hito histórico en la IA ocurre en el año 2005?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Múltiples vehículos recorren 131 millas de forma autónoma en el reto de DARPA",
+                                    "answer_start": 1828
+                                },
+                                {
+                                    "text": "Múltiples vehículos recorren 131 millas de forma autónoma",
+                                    "answer_start": 1828
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e5884af5-7505-4fdf-9e15-5053ceed94f8",
+                            "question": "¿Cuantos kilómetros hay de Madrid a Barcelona?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ingeniería del Conocimiento",
+            "paragraphs": [
+                {
+                    "context": "Aunque el desarrollo de algoritmos de IA es esencial, no menos importante es el modelar los problemas adecuadamente. Por otro lado, también es necesario capturar el conocimiento de un experto en la materia de forma que la máquina pueda aprovechar dicho conocimiento. En este punto suele surgir un conflicto, ya que el experto en IA capaz de modelar un problema de tal forma que pueda ser resuelto por un algoritmo no es un experto en la materia; y el experto puede no expresar o compartir su conocimiento de forma que pueda ser aprovechado en su totalidad. Es aquí de donde surge la necesidad de definir una metodología específica que defina cómo construir un sistema experto conjugando los conocimientos del experto en IA y del experto en la materia. El conjunto de las metodologías propuestas para este propósito constituyen la Ingeniería del Conocimiento. Los sistemas expertos son sistemas cuyo objetivo es emular la capacidad de decisión de un experto humano. En general, disponen de un motor de inferencia que codifica mediante reglas condicionales el comportamiento del sistema y de una base de conocimiento a partir de la cual deducen nueva información.  Suele ser deseable que el proceso de un sistema experto sea comprensible, es decir, que junto con la salida exista el porqué del razonamiento. Un eje central de la Ingeniería del Conocimiento es la adquisición de conocimiento. La adquisición del conocimiento es el proceso de recopilar información de los expertos y formalizarla mediante reglas y ontologías. Este proceso es, en muchos casos, el más crítico en el diseño de un sistema experto y, a menudo su correcta realización determina el éxito del producto final. Las ontologías obtenidas en el proceso de adquisición del conocimiento son modelos que describen el mundo mediante conjuntos de objetos, tipos, propiedades y relaciones. Estas ontologías suelen crearse siguiendo reglas particulares y se pueden describir formalmente con lenguajes específicos de ontologías. A menudo ontologías de interés público, junto con sus bases de conocimiento, son publicadas de manera que otros miembros de la comunidad puedan utilizarlas e, incluso, contribuir a ellas con conocimiento propio.",
+                    "qas": [
+                        {
+                            "id": "d6a73fd5-9b55-411f-b93d-9f8a9ca61bc7",
+                            "question": "¿Qué son los sistemas expertos?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Los sistemas expertos son sistemas cuyo objetivo es emular la capacidad de decisión de un experto humano",
+                                    "answer_start": 859
+                                },
+                                {
+                                    "text": "son sistemas cuyo objetivo es emular la capacidad de decisión de un experto humano",
+                                    "answer_start": 881
+                                },
+                                {
+                                    "text": "sistemas cuyo objetivo es emular la capacidad de decisión de un experto humano",
+                                    "answer_start": 885
+                                }
+                            ]
+                        },
+                        {
+                            "id": "042921a4-ce5f-41b6-9485-257f12f9066a",
+                            "question": "¿Qué requisitos se necesitan para estudiar un experto?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "183b0811-d52e-4d72-b9eb-057137b7fca3",
+                            "question": "¿Cómo se expera que sea un sistema experto?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Suele ser deseable que el proceso de un sistema experto sea comprensible, es decir, que junto con la salida exista el porqué del razonamiento",
+                                    "answer_start": 1163
+                                },
+                                {
+                                    "text": "Suele ser deseable que el proceso de un sistema experto sea comprensible",
+                                    "answer_start": 1163
+                                },
+                                {
+                                    "text": "que el proceso de un sistema experto sea comprensible, es decir, que junto con la salida exista el porqué del razonamiento",
+                                    "answer_start": 1182
+                                },
+                                {
+                                    "text": "comprensible, es decir, que junto con la salida exista el porqué del razonamiento",
+                                    "answer_start": 1223
+                                },
+                                {
+                                    "text": "que el proceso de un sistema experto sea comprensible",
+                                    "answer_start": 1182
+                                },
+                                {
+                                    "text": "comprensible",
+                                    "answer_start": 1223
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0b4f2809-6ea6-489e-91aa-0b3fbf257837",
+                            "question": "¿Como se comporta un elemento libre?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "0892fcf5-135b-465e-b68d-ecf99ed78cf1",
+                            "question": "¿Qué quiere decir que el proceso de un sistema experto sea comprensible?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "que junto con la salida exista el porqué del razonamiento",
+                                    "answer_start": 1247
+                                }
+                            ]
+                        },
+                        {
+                            "id": "537f1f54-7e9e-4571-bb29-bf3d7fba8b1e",
+                            "question": "¿Qué significa que un vehículo sea automático?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "9e252a96-146e-44a2-9d66-0401298afea4",
+                            "question": "¿En que consiste la adquisición del conocimiento?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La adquisición del conocimiento es el proceso de recopilar información de los expertos y formalizarla mediante reglas y ontologías",
+                                    "answer_start": 1390
+                                },
+                                {
+                                    "text": "es el proceso de recopilar información de los expertos y formalizarla mediante reglas y ontologías",
+                                    "answer_start": 1422
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8539a0b1-1a14-4c9f-9a61-0142a9d88a9c",
+                            "question": "¿En que consiste el proceso de la fotosintesis?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "dd9b035b-da20-42a1-ba17-d3419d751d66",
+                            "question": "¿Que son las ontologías obtenidas en el proceso de adquisición del conocimiento?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "el proceso de adquisición del conocimiento son modelos que describen el mundo mediante conjuntos de objetos, tipos, propiedades y relaciones",
+                                    "answer_start": 1709
+                                },
+                                {
+                                    "text": "son modelos que describen el mundo mediante conjuntos de objetos, tipos, propiedades y relaciones",
+                                    "answer_start": 1752
+                                },
+                                {
+                                    "text": "modelos que describen el mundo mediante conjuntos de objetos, tipos, propiedades y relaciones",
+                                    "answer_start": 1756
+                                }
+                            ]
+                        },
+                        {
+                            "id": "68a872de-b37e-4e2f-91be-e265de7d8bb1",
+                            "question": "¿Qué son los electrones?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "b93f374b-8bf6-405e-8193-711486f9a9f6",
+                            "question": "¿Cómo se crean las ontologías obtenidas en el proceso de adquisición del conocimiento?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "suelen crearse siguiendo reglas particulares y se pueden describir formalmente con lenguajes específicos de ontologías",
+                                    "answer_start": 1868
+                                },
+                                {
+                                    "text": "siguiendo reglas particulares y se pueden describir formalmente con lenguajes específicos de ontologías",
+                                    "answer_start": 1883
+                                },
+                                {
+                                    "text": "siguiendo reglas particulares",
+                                    "answer_start": 1883
+                                }
+                            ]
+                        },
+                        {
+                            "id": "24e35f13-7bad-4901-9737-c7945e8e7ed0",
+                            "question": "¿Cómo se crean las topologías de red?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Planitificación automática y PDDL",
+            "paragraphs": [
+                {
+                    "context": "El caso más sencillo es el que se conoce como planificación clásica, en la que se tiene conocimiento completo. El conocimiento del mundo se describe en lógica proposicional, las acciones no tienen duración y son deterministas y la métrica (si se emplea) es minimizar la longitud del plan. La planificación clásica es la forma más sencilla de planificación y el modelo formal a partir del cual se fue ofreciendo progresivamente mayor generalidad y expresividad. Por ello, en este tema trataremos únicamente planificación clásica.",
+                    "qas": [
+                        {
+                            "id": "1ebc5186-ef5e-4683-9497-05f74a543969",
+                            "question": "¿Cómo se describe el conocimiento del mundo?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "El conocimiento del mundo se describe en lógica proposicional",
+                                    "answer_start": 111
+                                },
+                                {
+                                    "text": "se describe en lógica proposicional",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "en lógica proposicional",
+                                    "answer_start": 149
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e6169732-023a-4af5-aa90-848e01c26ec2",
+                            "question": "¿Cual es el origen del mundo?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "a57923ee-8b65-428e-a077-7d6d053d136b",
+                            "question": "¿Cuál es la forma  más sencilla de planificación?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La planificación clásica",
+                                    "answer_start": 289
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1d1b87ed-f69a-430e-a623-2399996c1ab0",
+                            "question": "¿Qué es la planificación moderna?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                },
+                {
+                    "context": "El origen de la planificación clásica se remonta a los años 60 con el General Problem Solver, un programa cuyo objetivo era ser capaz de resolver cualquier tipo de problema sin importar a que dominio perteneciera. La motivación era crear un programa que fuera capaz de resolver tareas muy diferentes entre sí, de la misma manera que lo hacen los humanos. Aunque enseguida se comprobó que esta tarea era demasiado ambiciosa, el concepto de resolutor general permaneció en IA dentro del área de la IA general. La planificación automática, en realidad, podría considerarse como la sucesora espiritual del General Problem Solver, ya que es independiente de dominio. Esto quiere decir que los planificadores han de ser capaces de resolver problemas de planificación diferentes sin intervención del usuario, que solo se limita a modelar el problema.",
+                    "qas": [
+                        {
+                            "id": "425b05e2-f6ea-4070-b70c-620afdd80315",
+                            "question": "¿Cual es el origen de la planificación clásica?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "el General Problem Solver",
+                                    "answer_start": 67
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7d103bf5-8097-4e4c-8de1-d004180d18b9",
+                            "question": "¿Cuando se crea la física cuántica?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "e6720aed-980d-4e0a-b383-a836697bc212",
+                            "question": "¿Cual era la misisón del General Problem Solver?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "ser capaz de resolver cualquier tipo de problema",
+                                    "answer_start": 124
+                                },
+                                {
+                                    "text": "resolver cualquier tipo de problema",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "ser capaz de resolver cualquier tipo de problema sin importar a que dominio perteneciera",
+                                    "answer_start": 124
+                                },
+                                {
+                                    "text": "resolver cualquier tipo de problema sin importar a que dominio perteneciera",
+                                    "answer_start": 137
+                                },
+                                {
+                                    "text": "crear un programa que fuera capaz de resolver tareas muy diferentes entre sí, de la misma manera que lo hacen los humanos",
+                                    "answer_start": 232
+                                }
+                            ]
+                        },
+                        {
+                            "id": "07df0e83-b640-470c-a451-a284b8e90c7c",
+                            "question": "¿Quién fue el autor del General Problem Solver?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "41b8dd8d-3a6a-4b5c-9cee-752f0b867024",
+                            "question": "¿Quién es la sucesora espiritual del General Problem Solver",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "La planificación automática",
+                                    "answer_start": 508
+                                }
+                            ]
+                        },
+                        {
+                            "id": "01def5b2-1ec5-436e-a9fb-f5a2acb87747",
+                            "question": "¿Qué es un espíritu?",
+                            "is_impossible": false,
+                            "answers": []
+                        },
+                        {
+                            "id": "b03732f4-d729-4820-9e19-bdec98173e94",
+                            "question": "¿De qué deben ser capaces los planificadores?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "los planificadores han de ser capaces de resolver problemas de planificación diferentes sin intervención del usuario",
+                                    "answer_start": 684
+                                },
+                                {
+                                    "text": "de resolver problemas de planificación diferentes sin intervención del usuario",
+                                    "answer_start": 722
+                                }
+                            ]
+                        },
+                        {
+                            "id": "24152041-c377-416f-9508-0b6b3b58b6a5",
+                            "question": "¿Cuales son los tipos de planificadores?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Búsqueda de profundidad iterativa",
+            "paragraphs": [
+                {
+                    "context": "Una heurística consistente siempre es admisible, pero no necesariamente ocurre lo contrario.",
+                    "qas": [
+                        {
+                            "id": "32d4bca4-00a2-4329-9780-60c95c35c005",
+                            "question": "¿Cómo es una heurística consistente?",
+                            "is_impossible": false,
+                            "answers": [
+                                {
+                                    "text": "Una heurística consistente siempre es admisible",
+                                    "answer_start": 0
+                                },
+                                {
+                                    "text": "admisible",
+                                    "answer_start": 38
+                                },
+                                {
+                                    "text": "siempre es admisible",
+                                    "answer_start": 27
+                                }
+                            ]
+                        },
+                        {
+                            "id": "79811522-1811-40e9-a376-f55b05cfe06c",
+                            "question": "¿Cómo es una heurística admisible?",
+                            "is_impossible": false,
+                            "answers": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
